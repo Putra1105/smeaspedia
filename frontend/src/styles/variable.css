@@ -4,4 +4,8 @@
   --color-dark: #1d1d2c;
   --color-grey-light: #bbbbbf;
   --color-grey: #60606b;
+
+  --container-width-lg: 75%;
+  --container-width-md: 86%;
+  --container-width-sm: 90%;
 }
