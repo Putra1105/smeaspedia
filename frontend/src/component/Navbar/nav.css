@@ -3,7 +3,7 @@
   height: 100px;
   display: flex;
   justify-content: start;
-  aligh-items: center;
+  align-items: center;
 }
 .menu-bars {
   margin-left: 2rem;
