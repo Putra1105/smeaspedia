@@ -1,32 +1,30 @@
 import React from 'react';
-import { AiFillHome } from 'react-icons/ai';
-import { BiUserCircle } from 'react-icons/bi';
-import { FiSettings } from 'react-icons/fi';
-import { GrCircleInformation } from 'react-icons/gr';
+import * as AiIcons from 'react-icons/ai';
+import * as IoIcons from 'react-icons/io';
 
 export const SidebarData = [
   {
     title: 'Home',
     path: '/',
-    icon: <AiFillHome />,
+    icon: <AiIcons.AiFillHome />,
     cName: 'nav-text',
   },
   {
-    title: 'Accounts',
-    path: '/accounts',
-    icon: <BiUserCircle />,
+    title: 'Account',
+    path: '/account',
+    icon: <AiIcons.AiOutlineUser />,
     cName: 'nav-text',
   },
   {
-    title: 'Settings',
-    path: '/settings',
-    icon: <FiSettings />,
+    title: 'Setting',
+    path: '/setting',
+    icon: <AiIcons.AiFillSetting />,
     cName: 'nav-text',
   },
   {
     title: 'Information',
     path: '/information',
-    icon: <GrCircleInformation />,
+    icon: <IoIcons.IoMdInformationCircle />,
     cName: 'nav-text',
   },
 ];
