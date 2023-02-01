@@ -15,15 +15,21 @@ function Nav() {
     <>
       <IconContext.Provider value={{ color: '#1d1d2c' }}>
         <div className="navbar">
-          <Link to="#" className="menu-bars">
+          <Link to="#" className="menu-bars col-1">
             <FaIcons.FaBars onClick={showSidebar} />
           </Link>
-          <div className="logo">
-            <a href="/">SmeasPedia</a>
+          <div className="logo text-center col-7">
+            <a href="/" className="text-decoration-none title-text">SmeasPedia</a>
+          </div>
+          <div className="search col-3">
+            <input className="search-input-light" placeholder="Search"></input>
+            <span className="search-icon-light m-0">
+              <AiIcons.AiOutlineSearch/>
+            </span>
           </div>
         </div>
         <nav className={sidebar ? 'nav-menu active' : 'nav-menu'}>
-          <ul className="nav-menu-items" onClick={showSidebar}>
+          <ul className="nav-menu-items ps-0" onClick={showSidebar}>
             <li className="navbar-toggle">
               <Link to="#" className="menu-bars">
                 <AiIcons.AiOutlineClose />
